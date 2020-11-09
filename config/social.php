@@ -3,13 +3,13 @@
 return [
   'services' => [
 
-    'google' => [
-      'name' => 'Google'
-    ],
+    // 'google' => [
+    //   'name' => 'Google'
+    // ],
 
-    'github' => [
-      'name' => 'Github'
-    ],
+    // 'github' => [
+    //   'name' => 'Github'
+    // ],
 
     // 'facebook' => [
     //   'name' => 'Facebook'
