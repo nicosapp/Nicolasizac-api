@@ -41,6 +41,10 @@ Route::group(['middleware' => 'auth:sanctum', 'prefix' => 'users', 'namespace' =
   Route::post('{user}/avatar', 'UserController@avatar');
 });
 
+Route::group(['middleware' => 'guest', 'prefix' => 'contact', 'namespace' => 'Contact'], function () {
+  Route::post('me', 'ContactController@contactMe');
+});
+
 Route::group(['prefix' => 'media', 'namespace' => 'Media'], function () {
   Route::get('config', 'MediaConfigController@index');
 });
