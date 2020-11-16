@@ -48,7 +48,3 @@ Route::group(['middleware' => 'guest', 'prefix' => 'contact', 'namespace' => 'Co
 Route::group(['prefix' => 'media', 'namespace' => 'Media'], function () {
   Route::get('config', 'MediaConfigController@index');
 });
-
-Route::get('test', function () {
-  return response()->json(['message' => 'success']);
-});
