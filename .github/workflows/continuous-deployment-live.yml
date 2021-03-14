@@ -41,7 +41,7 @@ jobs:
             rm -r ./database/migrations/*
             cp -r ${{ secrets.REMOTE_TARGET_HOME }}api/* ./
             cp ${{ secrets.REMOTE_TARGET_HOME }}.env.api ./.env
-            php7.4 /usr/local/bin/composer install
+            php7.4 /usr/bin/composer install
             php7.4 artisan migrate
             php7.4 artisan cache:clear
             php7.4 artisan queue:restart
