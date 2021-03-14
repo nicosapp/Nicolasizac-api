@@ -39,7 +39,7 @@ jobs:
             cd ${{ secrets.REMOTE_TARGET_WWW }}api/
             php7.4 artisan down
             rm -r ./database/migrations/*
-            cp -r ${{ secrets.REMOTE_TARGET_HOM }api/* ./
+            cp -r ${{ secrets.REMOTE_TARGET_HOME }}api/* ./
             cp ${{ secrets.REMOTE_TARGET_HOME }}.env.api ./.env
             php7.4 /usr/local/bin/composer install
             php7.4 artisan migrate
